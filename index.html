@@ -268,6 +268,113 @@
             
               
                 
+                <a class="post-title-link" href="/2016/09/24/第一周/" itemprop="url">
+                  第一周
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-09-24T15:10:22+08:00" content="2016-09-24">
+              2016-09-24
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/09/24/第一周/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/24/第一周/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>这周主要做了3件事：</p>
+<ol>
+<li>过了5道<code>leetcode</code></li>
+<li>接触了<code>scrapy</code>框架</li>
+<li>正在看的<code>javascript Dom</code>.</li>
+</ol>
+<p><code>leetcode</code>做题速度只是勉强满足要求。毕竟三四百道题，照这个速度肯定是年前肯定是做不完的。<br>周一至周五，每天只有晚上的时间可以用。没办法，还是多挤挤时间吧。<br>准备先开始学<code>scrapy</code>，因为爬虫相对来说用处很广，将来可以考虑结合<code>flask</code>和<code>scrapy</code>，做一个资源搜索站。<br>但是<code>scrapy</code>里也用到很多前端的东西，所以准备先过一遍<code>javascript dom</code>和<code>html</code>。然后继续学<code>scrapy</code>，不懂的用搜索引擎。<br>多努力吧！以后尽量每周一总结。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/09/24/java读入文件/" itemprop="url">
                   java读入文件
                 </a>
@@ -319,7 +426,7 @@
       
         
           
-            <h4 id="java读入文件一般模式"><a href="#java读入文件一般模式" class="headerlink" title="java读入文件一般模式"></a>java读入文件一般模式</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> java.io.BufferedReader;</div><div class="line"><span class="keyword">import</span> java.io.File;</div><div class="line"><span class="keyword">import</span> java.io.FileInputStream;</div><div class="line"><span class="keyword">import</span> java.io.IOException;</div><div class="line"><span class="keyword">import</span> java.io.InputStreamReader;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> IOException </span>&#123;</div><div class="line">	String line;</div><div class="line">	FileInputStream fis = <span class="keyword">null</span>;</div><div class="line">	<span class="keyword">try</span> &#123;</div><div class="line">	fis = <span class="keyword">new</span> FileInputStream(<span class="string">"../data/#113.txt"</span>);</div><div class="line">	InputStreamReader isr = <span class="keyword">new</span> InputStreamReader(fis);</div><div class="line">	BufferedReader br = <span class="keyword">new</span> BufferedReader(isr);</div><div class="line"></div><div class="line">	<span class="keyword">while</span> ((line = br.readLine()) != <span class="keyword">null</span>) &#123;</div><div class="line">	     &#125;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">catch</span> (IOException exception) &#123;</div><div class="line">	exception.printStackTrace();</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">finally</span> &#123;</div><div class="line">	     <span class="keyword">if</span>(fis != <span class="keyword">null</span>)</div><div class="line">	          fis.close();</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+            <p><font size="4">java读入文件一般模式</font><br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> java.io.BufferedReader;</div><div class="line"><span class="keyword">import</span> java.io.File;</div><div class="line"><span class="keyword">import</span> java.io.FileInputStream;</div><div class="line"><span class="keyword">import</span> java.io.IOException;</div><div class="line"><span class="keyword">import</span> java.io.InputStreamReader;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> IOException </span>&#123;</div><div class="line">	String line;</div><div class="line">	FileInputStream fis = <span class="keyword">null</span>;</div><div class="line">	<span class="keyword">try</span> &#123;</div><div class="line">	fis = <span class="keyword">new</span> FileInputStream(<span class="string">"../data/#113.txt"</span>);</div><div class="line">	InputStreamReader isr = <span class="keyword">new</span> InputStreamReader(fis);</div><div class="line">	BufferedReader br = <span class="keyword">new</span> BufferedReader(isr);</div><div class="line"></div><div class="line">	<span class="keyword">while</span> ((line = br.readLine()) != <span class="keyword">null</span>) &#123;</div><div class="line">	     &#125;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">catch</span> (IOException exception) &#123;</div><div class="line">	exception.printStackTrace();</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">finally</span> &#123;</div><div class="line">	     <span class="keyword">if</span>(fis != <span class="keyword">null</span>)</div><div class="line">	          fis.close();</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>&emsp;&emsp;虽然看上去繁琐，但是和<code>c/c++</code>的文件操作相比，使用起来不容易出错。用<code>java</code>做字符串还是很方便的。</p>
 
           
@@ -491,7 +598,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -501,7 +608,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

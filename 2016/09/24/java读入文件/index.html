@@ -90,7 +90,7 @@
 <meta property="og:url" content="https://spencerl.github.io/2016/09/24/java读入文件/index.html">
 <meta property="og:site_name" content="Spencer's Notes">
 <meta property="og:description" content="java读入文件一般模式12345678910111213141516171819202122232425import java.io.BufferedReader;import java.io.File;import java.io.FileInputStream;import java.io.IOException;import java.io.InputStreamReader;public">
-<meta property="og:updated_time" content="2016-09-24T07:04:54.769Z">
+<meta property="og:updated_time" content="2016-09-24T07:07:03.965Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java读入文件">
 <meta name="twitter:description" content="java读入文件一般模式12345678910111213141516171819202122232425import java.io.BufferedReader;import java.io.File;import java.io.FileInputStream;import java.io.IOException;import java.io.InputStreamReader;public">
@@ -313,7 +313,7 @@
       
 
       
-        <h4 id="java读入文件一般模式"><a href="#java读入文件一般模式" class="headerlink" title="java读入文件一般模式"></a>java读入文件一般模式</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> java.io.BufferedReader;</div><div class="line"><span class="keyword">import</span> java.io.File;</div><div class="line"><span class="keyword">import</span> java.io.FileInputStream;</div><div class="line"><span class="keyword">import</span> java.io.IOException;</div><div class="line"><span class="keyword">import</span> java.io.InputStreamReader;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> IOException </span>&#123;</div><div class="line">	String line;</div><div class="line">	FileInputStream fis = <span class="keyword">null</span>;</div><div class="line">	<span class="keyword">try</span> &#123;</div><div class="line">	fis = <span class="keyword">new</span> FileInputStream(<span class="string">"../data/#113.txt"</span>);</div><div class="line">	InputStreamReader isr = <span class="keyword">new</span> InputStreamReader(fis);</div><div class="line">	BufferedReader br = <span class="keyword">new</span> BufferedReader(isr);</div><div class="line"></div><div class="line">	<span class="keyword">while</span> ((line = br.readLine()) != <span class="keyword">null</span>) &#123;</div><div class="line">	     &#125;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">catch</span> (IOException exception) &#123;</div><div class="line">	exception.printStackTrace();</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">finally</span> &#123;</div><div class="line">	     <span class="keyword">if</span>(fis != <span class="keyword">null</span>)</div><div class="line">	          fis.close();</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+        <p><font size="4">java读入文件一般模式</font><br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> java.io.BufferedReader;</div><div class="line"><span class="keyword">import</span> java.io.File;</div><div class="line"><span class="keyword">import</span> java.io.FileInputStream;</div><div class="line"><span class="keyword">import</span> java.io.IOException;</div><div class="line"><span class="keyword">import</span> java.io.InputStreamReader;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> IOException </span>&#123;</div><div class="line">	String line;</div><div class="line">	FileInputStream fis = <span class="keyword">null</span>;</div><div class="line">	<span class="keyword">try</span> &#123;</div><div class="line">	fis = <span class="keyword">new</span> FileInputStream(<span class="string">"../data/#113.txt"</span>);</div><div class="line">	InputStreamReader isr = <span class="keyword">new</span> InputStreamReader(fis);</div><div class="line">	BufferedReader br = <span class="keyword">new</span> BufferedReader(isr);</div><div class="line"></div><div class="line">	<span class="keyword">while</span> ((line = br.readLine()) != <span class="keyword">null</span>) &#123;</div><div class="line">	     &#125;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">catch</span> (IOException exception) &#123;</div><div class="line">	exception.printStackTrace();</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">finally</span> &#123;</div><div class="line">	     <span class="keyword">if</span>(fis != <span class="keyword">null</span>)</div><div class="line">	          fis.close();</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>&emsp;&emsp;虽然看上去繁琐，但是和<code>c/c++</code>的文件操作相比，使用起来不容易出错。用<code>java</code>做字符串还是很方便的。</p>
 
       
@@ -353,6 +353,10 @@
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/09/24/第一周/" rel="prev" title="第一周">
+                第一周 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -424,7 +428,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -434,7 +438,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -483,7 +487,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#java读入文件一般模式"><span class="nav-number">1.</span> <span class="nav-text">java读入文件一般模式</span></a></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
         </section>
