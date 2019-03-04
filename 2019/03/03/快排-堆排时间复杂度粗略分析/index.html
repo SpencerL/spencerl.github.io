@@ -84,18 +84,18 @@
 
 
 
-<meta name="description" content="堆排序建堆 以建大顶堆操作为例，从第一个非叶子节点开始调整堆，使得以该节点为根的子树满足堆性质(根节点值 &amp;gt; 子节点值)。由堆性质(特殊的完全二叉树)，最后一个节点的父节点的出现在N/2，故只需从该层开始，逐步往上调整推即可。 最后一个非叶子节点出现在倒数第二层 堆的高度为\(h=logN\)，每一次节点个数至多为\(2^{i-1}\), 其中\(i\)为所在的层数 第h-1层至多交换">
+<meta name="description" content="堆排序建堆 以建大顶堆操作为例，从第一个非叶子节点开始调整堆，使得以该节点为根的子树满足堆性质(根节点值 &amp;gt; 子节点值)。由堆性质(特殊的完全二叉树)，最后一个节点的父节点的出现在N/2，故只需从该层开始，逐步往上调整推即可。 最后一个非叶子节点出现在倒数第二层 堆的高度为\(h=logN\)，每一次节点个数至多为\(2^{i-1}\), 其中\(i\)为所在的层数 第h-1层至多交换1次，">
 <meta name="keywords" content="OJ">
 <meta property="og:type" content="article">
 <meta property="og:title" content="快排&amp;堆排时间复杂度粗略分析">
 <meta property="og:url" content="https://spencerl.github.io/2019/03/03/快排-堆排时间复杂度粗略分析/index.html">
 <meta property="og:site_name" content="Spencer&#39;s Notes">
-<meta property="og:description" content="堆排序建堆 以建大顶堆操作为例，从第一个非叶子节点开始调整堆，使得以该节点为根的子树满足堆性质(根节点值 &amp;gt; 子节点值)。由堆性质(特殊的完全二叉树)，最后一个节点的父节点的出现在N/2，故只需从该层开始，逐步往上调整推即可。 最后一个非叶子节点出现在倒数第二层 堆的高度为\(h=logN\)，每一次节点个数至多为\(2^{i-1}\), 其中\(i\)为所在的层数 第h-1层至多交换">
+<meta property="og:description" content="堆排序建堆 以建大顶堆操作为例，从第一个非叶子节点开始调整堆，使得以该节点为根的子树满足堆性质(根节点值 &amp;gt; 子节点值)。由堆性质(特殊的完全二叉树)，最后一个节点的父节点的出现在N/2，故只需从该层开始，逐步往上调整推即可。 最后一个非叶子节点出现在倒数第二层 堆的高度为\(h=logN\)，每一次节点个数至多为\(2^{i-1}\), 其中\(i\)为所在的层数 第h-1层至多交换1次，">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-03T16:00:04.620Z">
+<meta property="og:updated_time" content="2019-03-04T01:24:04.584Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="快排&amp;堆排时间复杂度粗略分析">
-<meta name="twitter:description" content="堆排序建堆 以建大顶堆操作为例，从第一个非叶子节点开始调整堆，使得以该节点为根的子树满足堆性质(根节点值 &amp;gt; 子节点值)。由堆性质(特殊的完全二叉树)，最后一个节点的父节点的出现在N/2，故只需从该层开始，逐步往上调整推即可。 最后一个非叶子节点出现在倒数第二层 堆的高度为\(h=logN\)，每一次节点个数至多为\(2^{i-1}\), 其中\(i\)为所在的层数 第h-1层至多交换">
+<meta name="twitter:description" content="堆排序建堆 以建大顶堆操作为例，从第一个非叶子节点开始调整堆，使得以该节点为根的子树满足堆性质(根节点值 &amp;gt; 子节点值)。由堆性质(特殊的完全二叉树)，最后一个节点的父节点的出现在N/2，故只需从该层开始，逐步往上调整推即可。 最后一个非叶子节点出现在倒数第二层 堆的高度为\(h=logN\)，每一次节点个数至多为\(2^{i-1}\), 其中\(i\)为所在的层数 第h-1层至多交换1次，">
 
 
 
@@ -315,15 +315,12 @@
       
 
       
-        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-
-
-<h3 id="堆排序"><a href="#堆排序" class="headerlink" title="堆排序"></a>堆排序</h3><h4 id="建堆"><a href="#建堆" class="headerlink" title="建堆"></a>建堆</h4><ul>
+        <h3 id="堆排序"><a href="#堆排序" class="headerlink" title="堆排序"></a>堆排序</h3><h4 id="建堆"><a href="#建堆" class="headerlink" title="建堆"></a>建堆</h4><ul>
 <li>以建大顶堆操作为例，从第一个非叶子节点开始调整堆，使得以该节点为根的子树满足<strong>堆性质</strong>(根节点值 &gt; 子节点值)。<br>由<strong>堆性质</strong>(特殊的完全二叉树)，最后一个节点的父节点的出现在<code>N/2</code>，故只需从该层开始，逐步往上调整推即可。</li>
 <li>最后一个非叶子节点出现在<strong>倒数第二层</strong></li>
 <li>堆的高度为\(h=logN\)，每一次节点个数至多为\(2^{i-1}\), 其中\(i\)为所在的层数</li>
 <li>第h-1层至多交换1次，第h-2层至多交换2次….，总的交换次数为:<br>$$S<em>{h} = 1\times{2^{h-2}} + 2\times{2^{h-3}}+…+(h-1)\times{1}=\sum</em>{i=1}^{h-1}i\times{2^{h-i-1}}$$</li>
-<li>求和得到建堆时间复杂度\(O(logN)\)</li>
+<li>求和得到建堆时间复杂度\(O(N)\)</li>
 </ul>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">buildHeap</span><span class="params">(<span class="keyword">int</span>[] a)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> N = a.length;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = N/<span class="number">2</span>; i &gt;=<span class="number">1</span>; i--) &#123;</span><br><span class="line">        swim(a, i, N);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">swim</span><span class="params">(<span class="keyword">int</span>[] a, <span class="keyword">int</span> k, <span class="keyword">int</span> N)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">while</span> (<span class="number">2</span>*k &lt;= N) &#123;</span><br><span class="line">        <span class="keyword">int</span> j = <span class="number">2</span>*k;</span><br><span class="line">        <span class="keyword">if</span> (j+<span class="number">1</span> &lt;= N  &amp;&amp; less(a, j, j+<span class="number">1</span>))</span><br><span class="line">            j++;</span><br><span class="line">        <span class="keyword">if</span> (less(a, j, k)) <span class="keyword">break</span>;</span><br><span class="line">        swap(a, i, j);</span><br><span class="line">        k = j;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">swap</span><span class="params">(<span class="keyword">int</span>[] a, <span class="keyword">int</span> i, <span class="keyword">int</span> j)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> tmp = a[i-<span class="number">1</span>];</span><br><span class="line">    a[i-<span class="number">1</span>] = a[j-<span class="number">1</span>];</span><br><span class="line">    a[j-<span class="number">1</span>] = tmp;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">less</span><span class="params">(<span class="keyword">int</span>[] a, <span class="keyword">int</span> i, <span class="keyword">int</span> j)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a[i-<span class="number">1</span>] &lt; a[j-<span class="number">1</span>];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="快排"><a href="#快排" class="headerlink" title="快排"></a>快排</h3><ul>
