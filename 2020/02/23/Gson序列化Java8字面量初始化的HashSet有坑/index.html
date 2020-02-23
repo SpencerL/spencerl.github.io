@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css">
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="Java8,">
 
 
 
@@ -84,17 +84,20 @@
 
 
 
-<meta name="description" content="&amp;emsp;&amp;emsp;这周主要做了两件事：  过了6道leetcode题目 基于flask实现一个TODO List应用（尚未完工）  &amp;emsp;&amp;emsp;感觉leetcode上有些题目还是挺难的，做的题太少，很多技巧不知道。直接硬想，想半天只能模模糊糊有点思路，到细节的地方又卡壳了。对于跟树有关的题目，之前一直觉得非递归解决问题才是最好的，然而很多问题非递归解法是很难的，（比如leetco">
+<meta name="description" content="最近踩了一个坑，Java8字面量定义的HashSet被初始化时，会被gson识别的为null，测试代码:123456789101112131415161718192021222324252627282930public static void main(String[] args) &amp;#123;    Map&amp;lt;String, Set&amp;lt;String&amp;gt;&amp;gt; testMap1 =">
+<meta name="keywords" content="Java8">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第二周">
-<meta property="og:url" content="https://spencerl.github.io/2016/10/02/第二周/index.html">
+<meta property="og:title" content="Gson序列化Java8字面量初始化的HashSet有坑">
+<meta property="og:url" content="https://spencerl.github.io/2020/02/23/Gson序列化Java8字面量初始化的HashSet有坑/index.html">
 <meta property="og:site_name" content="Spencer&#39;s Notes">
-<meta property="og:description" content="&amp;emsp;&amp;emsp;这周主要做了两件事：  过了6道leetcode题目 基于flask实现一个TODO List应用（尚未完工）  &amp;emsp;&amp;emsp;感觉leetcode上有些题目还是挺难的，做的题太少，很多技巧不知道。直接硬想，想半天只能模模糊糊有点思路，到细节的地方又卡壳了。对于跟树有关的题目，之前一直觉得非递归解决问题才是最好的，然而很多问题非递归解法是很难的，（比如leetco">
+<meta property="og:description" content="最近踩了一个坑，Java8字面量定义的HashSet被初始化时，会被gson识别的为null，测试代码:123456789101112131415161718192021222324252627282930public static void main(String[] args) &amp;#123;    Map&amp;lt;String, Set&amp;lt;String&amp;gt;&amp;gt; testMap1 =">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2016-10-02T09:15:46.000Z">
+<meta property="og:image" content="https://spencerl.github.io/images/gson-java8-hashset.png">
+<meta property="og:updated_time" content="2020-02-23T15:16:29.002Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="第二周">
-<meta name="twitter:description" content="&amp;emsp;&amp;emsp;这周主要做了两件事：  过了6道leetcode题目 基于flask实现一个TODO List应用（尚未完工）  &amp;emsp;&amp;emsp;感觉leetcode上有些题目还是挺难的，做的题太少，很多技巧不知道。直接硬想，想半天只能模模糊糊有点思路，到细节的地方又卡壳了。对于跟树有关的题目，之前一直觉得非递归解决问题才是最好的，然而很多问题非递归解法是很难的，（比如leetco">
+<meta name="twitter:title" content="Gson序列化Java8字面量初始化的HashSet有坑">
+<meta name="twitter:description" content="最近踩了一个坑，Java8字面量定义的HashSet被初始化时，会被gson识别的为null，测试代码:123456789101112131415161718192021222324252627282930public static void main(String[] args) &amp;#123;    Map&amp;lt;String, Set&amp;lt;String&amp;gt;&amp;gt; testMap1 =">
+<meta name="twitter:image" content="https://spencerl.github.io/images/gson-java8-hashset.png">
 
 
 
@@ -115,9 +118,9 @@
 
 
 
-  <link rel="canonical" href="https://spencerl.github.io/2016/10/02/第二周/">
+  <link rel="canonical" href="https://spencerl.github.io/2020/02/23/Gson序列化Java8字面量初始化的HashSet有坑/">
 
-  <title> 第二周 | Spencer's Notes </title>
+  <title> Gson序列化Java8字面量初始化的HashSet有坑 | Spencer's Notes </title>
 </head>
 
 <body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -267,7 +270,7 @@
             
             
               
-                第二周
+                Gson序列化Java8字面量初始化的HashSet有坑
               
             
           </h1>
@@ -279,38 +282,19 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-02T16:43:56+08:00" content="2016-10-02">
-              2016-10-02
+            <time itemprop="dateCreated" datetime="2020-02-23T22:44:34+08:00" content="2020-02-23">
+              2020-02-23
             </time>
           </span>
 
-          
-            <span class="post-category">
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope="" itemtype="https://schema.org/Thing">
-                  <a href="/categories/每周总结/" itemprop="url" rel="index">
-                    <span itemprop="name">每周总结</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
           
 
           
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/10/02/第二周/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/02/第二周/" itemprop="commentsCount"></span>
+                <a href="/2020/02/23/Gson序列化Java8字面量初始化的HashSet有坑/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2020/02/23/Gson序列化Java8字面量初始化的HashSet有坑/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -333,17 +317,16 @@
       
 
       
-        <p>&emsp;&emsp;这周主要做了两件事：</p>
-<ol>
-<li>过了6道<code>leetcode</code>题目</li>
-<li>基于<code>flask</code>实现一个TODO List应用（尚未完工）</li>
-</ol>
-<p>&emsp;&emsp;感觉<code>leetcode</code>上有些题目还是挺难的，做的题太少，很多技巧不知道。直接硬想，想半天只能模模糊糊有点思路，到细节的地方又卡壳了。对于跟树有关的题目，之前一直觉得非递归解决问题才是最好的，然而很多问题非递归解法是很难的，（比如<code>leetcode</code>#113）网上能找到的都很少。所以能解决问题就是最好的，一步步来吧，不要一开始就要用技巧性最强的解法。<br>&emsp;&emsp;<code>leetcode</code>#113是跟树遍历相关的题目，最开始想的是借鉴后续遍历的想法去做，所以又复习了一遍树的前中后序遍历的递归和非递归方法，然而想偏了。<br>&emsp;&emsp;最后总结下做完这6道题的收获:</p>
-<ol>
-<li><code>leetcode</code>#11, 考虑前后两个指针的思路，这种方式应该有通用性。</li>
-<li><code>leetcode</code>#113, 考虑递归的时候，考虑第一次递归和最后一次递归（根节点和叶子节点）便于理解。</li>
-</ol>
-<p>&emsp;&emsp;最后初步理解了ORM框架是什么。</p>
+        <p>最近踩了一个坑，Java8字面量定义的HashSet被初始化时，会被gson识别的为null，测试代码:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    Map&lt;String, Set&lt;String&gt;&gt; testMap1 = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">    Set&lt;String&gt; testSet = <span class="keyword">new</span> HashSet&lt;String&gt;()&#123;&#123;add(<span class="string">"abc"</span>);&#125;&#125;;</span><br><span class="line">    testMap1.put(<span class="string">"巴黎"</span>, testSet);</span><br><span class="line"></span><br><span class="line">    System.out.printf(<span class="string">"testSet: %s\n"</span>, testSet);</span><br><span class="line">    System.out.printf(<span class="string">"testSet json: %s\n"</span>, <span class="keyword">new</span> Gson().toJson(testSet));</span><br><span class="line">    System.out.printf(<span class="string">"testSet containsKey: %s, %s\n"</span>, <span class="string">"abc"</span>, testSet.contains(<span class="string">"abc"</span>));</span><br><span class="line"></span><br><span class="line">    System.out.printf(<span class="string">"\ntestMap1: %s\n"</span>, testMap1);</span><br><span class="line">    System.out.printf(<span class="string">"testMap1 json: %s\n"</span>, <span class="keyword">new</span> Gson().toJson(testMap1));</span><br><span class="line">    serializeMap(testMap1);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    Map&lt;String, String&gt; testMap2 = <span class="keyword">new</span> HashMap&lt;String, String&gt;()&#123;&#123;put(<span class="string">"b"</span>, <span class="string">"B"</span>);&#125;&#125;;</span><br><span class="line">    System.out.printf(<span class="string">"\ntestMap2: %s\n"</span>, testMap2);</span><br><span class="line">    System.out.printf(<span class="string">"testMap2 json: %s\n"</span>, testMap2);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> &lt;T&gt; <span class="function"><span class="keyword">void</span> <span class="title">serializeMap</span><span class="params">(Map&lt;String, T&gt; map)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (Map.Entry&lt;String, T&gt; entry : map.entrySet()) &#123;</span><br><span class="line">        System.out.printf(<span class="string">"serialize map, key: %s value: %s valueJsonStr:%s\n "</span>,</span><br><span class="line">                        entry.getKey(), entry.getValue(), <span class="keyword">new</span> Gson().toJson(entry.getValue()));</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h4 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h4><ul>
+<li>java版本: 1.8.0_202</li>
+<li><p>Gson: 2.3.1</p>
+<h4 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h4><p><img src="/images/gson-java8-hashset.png" alt=""></p>
+</li>
+<li><p>怀疑是gson的问题，Java高版本的一些特性，一些库不一定支持。</p>
+</li>
+<li>Java8及以上不熟悉的操作少用。</li>
+</ul>
 
       
     </div>
@@ -364,22 +347,24 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Java8/" rel="tag">#Java8</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/09/24/第一周/" rel="next" title="第一周">
-                <i class="fa fa-chevron-left"></i> 第一周
+              <a href="/2020/02/23/开发杂记/" rel="next" title="开发杂记">
+                <i class="fa fa-chevron-left"></i> 开发杂记
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/10/03/下学期计划/" rel="prev" title="下学期计划">
-                下学期计划 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -405,7 +390,7 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/10/02/第二周/" data-title="第二周" data-url="https://spencerl.github.io/2016/10/02/第二周/">
+      <div class="ds-thread" data-thread-key="2020/02/23/Gson序列化Java8字面量初始化的HashSet有坑/" data-title="Gson序列化Java8字面量初始化的HashSet有坑" data-url="https://spencerl.github.io/2020/02/23/Gson序列化Java8字面量初始化的HashSet有坑/">
       </div>
     
   </div>
@@ -505,7 +490,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#环境"><span class="nav-number">1.</span> <span class="nav-text">环境</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#输出"><span class="nav-number">2.</span> <span class="nav-text">输出</span></a></li></ol></div>
             
           </div>
         </section>

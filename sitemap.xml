@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://spencerl.github.io/2020/02/23/Gson%E5%BA%8F%E5%88%97%E5%8C%96Java8%E5%AD%97%E9%9D%A2%E9%87%8F%E5%88%9D%E5%A7%8B%E5%8C%96%E7%9A%84HashSet%E6%9C%89%E5%9D%91/</loc>
+    
+    <lastmod>2020-02-23T15:16:29.002Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://spencerl.github.io/2020/02/23/%E5%BC%80%E5%8F%91%E6%9D%82%E8%AE%B0/</loc>
+    
+    <lastmod>2020-02-23T14:40:59.961Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://spencerl.github.io/2019/02/18/%E7%94%9F%E6%B4%BB%E6%9D%82%E8%AE%B0/</loc>
     
     <lastmod>2019-04-16T14:36:28.289Z</lastmod>

@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css">
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="碎碎念,">
 
 
 
@@ -84,17 +84,18 @@
 
 
 
-<meta name="description" content="&amp;emsp;&amp;emsp;这周主要做了两件事：  过了6道leetcode题目 基于flask实现一个TODO List应用（尚未完工）  &amp;emsp;&amp;emsp;感觉leetcode上有些题目还是挺难的，做的题太少，很多技巧不知道。直接硬想，想半天只能模模糊糊有点思路，到细节的地方又卡壳了。对于跟树有关的题目，之前一直觉得非递归解决问题才是最好的，然而很多问题非递归解法是很难的，（比如leetco">
+<meta name="description" content="最好每个静态方法都带参数，否则方法内只能使用全局的静态变量，不方便方法扩展。 lambda块不超过2行，超过两行的，重新定义方法 少用静态变量 不要写冗余的过滤逻辑，否则删除的时候容易删漏。逻辑冗余说明写的时候没想清楚，对逻辑不够确认。 修改方法时，先确认哪些地方调用了该方法。">
+<meta name="keywords" content="碎碎念">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第二周">
-<meta property="og:url" content="https://spencerl.github.io/2016/10/02/第二周/index.html">
+<meta property="og:title" content="开发杂记">
+<meta property="og:url" content="https://spencerl.github.io/2020/02/23/开发杂记/index.html">
 <meta property="og:site_name" content="Spencer&#39;s Notes">
-<meta property="og:description" content="&amp;emsp;&amp;emsp;这周主要做了两件事：  过了6道leetcode题目 基于flask实现一个TODO List应用（尚未完工）  &amp;emsp;&amp;emsp;感觉leetcode上有些题目还是挺难的，做的题太少，很多技巧不知道。直接硬想，想半天只能模模糊糊有点思路，到细节的地方又卡壳了。对于跟树有关的题目，之前一直觉得非递归解决问题才是最好的，然而很多问题非递归解法是很难的，（比如leetco">
+<meta property="og:description" content="最好每个静态方法都带参数，否则方法内只能使用全局的静态变量，不方便方法扩展。 lambda块不超过2行，超过两行的，重新定义方法 少用静态变量 不要写冗余的过滤逻辑，否则删除的时候容易删漏。逻辑冗余说明写的时候没想清楚，对逻辑不够确认。 修改方法时，先确认哪些地方调用了该方法。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2016-10-02T09:15:46.000Z">
+<meta property="og:updated_time" content="2020-02-23T14:40:59.961Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="第二周">
-<meta name="twitter:description" content="&amp;emsp;&amp;emsp;这周主要做了两件事：  过了6道leetcode题目 基于flask实现一个TODO List应用（尚未完工）  &amp;emsp;&amp;emsp;感觉leetcode上有些题目还是挺难的，做的题太少，很多技巧不知道。直接硬想，想半天只能模模糊糊有点思路，到细节的地方又卡壳了。对于跟树有关的题目，之前一直觉得非递归解决问题才是最好的，然而很多问题非递归解法是很难的，（比如leetco">
+<meta name="twitter:title" content="开发杂记">
+<meta name="twitter:description" content="最好每个静态方法都带参数，否则方法内只能使用全局的静态变量，不方便方法扩展。 lambda块不超过2行，超过两行的，重新定义方法 少用静态变量 不要写冗余的过滤逻辑，否则删除的时候容易删漏。逻辑冗余说明写的时候没想清楚，对逻辑不够确认。 修改方法时，先确认哪些地方调用了该方法。">
 
 
 
@@ -115,9 +116,9 @@
 
 
 
-  <link rel="canonical" href="https://spencerl.github.io/2016/10/02/第二周/">
+  <link rel="canonical" href="https://spencerl.github.io/2020/02/23/开发杂记/">
 
-  <title> 第二周 | Spencer's Notes </title>
+  <title> 开发杂记 | Spencer's Notes </title>
 </head>
 
 <body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -267,7 +268,7 @@
             
             
               
-                第二周
+                开发杂记
               
             
           </h1>
@@ -279,38 +280,19 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-02T16:43:56+08:00" content="2016-10-02">
-              2016-10-02
+            <time itemprop="dateCreated" datetime="2020-02-23T22:32:09+08:00" content="2020-02-23">
+              2020-02-23
             </time>
           </span>
 
-          
-            <span class="post-category">
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope="" itemtype="https://schema.org/Thing">
-                  <a href="/categories/每周总结/" itemprop="url" rel="index">
-                    <span itemprop="name">每周总结</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
           
 
           
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/10/02/第二周/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/02/第二周/" itemprop="commentsCount"></span>
+                <a href="/2020/02/23/开发杂记/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2020/02/23/开发杂记/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -333,17 +315,13 @@
       
 
       
-        <p>&emsp;&emsp;这周主要做了两件事：</p>
-<ol>
-<li>过了6道<code>leetcode</code>题目</li>
-<li>基于<code>flask</code>实现一个TODO List应用（尚未完工）</li>
+        <ol>
+<li>最好每个静态方法都带参数，否则方法内只能使用全局的静态变量，不方便方法扩展。</li>
+<li>lambda块不超过2行，超过两行的，重新定义方法</li>
+<li>少用静态变量</li>
+<li>不要写冗余的过滤逻辑，否则删除的时候容易删漏。逻辑冗余说明写的时候没想清楚，对逻辑不够确认。</li>
+<li>修改方法时，先确认哪些地方调用了该方法。</li>
 </ol>
-<p>&emsp;&emsp;感觉<code>leetcode</code>上有些题目还是挺难的，做的题太少，很多技巧不知道。直接硬想，想半天只能模模糊糊有点思路，到细节的地方又卡壳了。对于跟树有关的题目，之前一直觉得非递归解决问题才是最好的，然而很多问题非递归解法是很难的，（比如<code>leetcode</code>#113）网上能找到的都很少。所以能解决问题就是最好的，一步步来吧，不要一开始就要用技巧性最强的解法。<br>&emsp;&emsp;<code>leetcode</code>#113是跟树遍历相关的题目，最开始想的是借鉴后续遍历的想法去做，所以又复习了一遍树的前中后序遍历的递归和非递归方法，然而想偏了。<br>&emsp;&emsp;最后总结下做完这6道题的收获:</p>
-<ol>
-<li><code>leetcode</code>#11, 考虑前后两个指针的思路，这种方式应该有通用性。</li>
-<li><code>leetcode</code>#113, 考虑递归的时候，考虑第一次递归和最后一次递归（根节点和叶子节点）便于理解。</li>
-</ol>
-<p>&emsp;&emsp;最后初步理解了ORM框架是什么。</p>
 
       
     </div>
@@ -364,21 +342,27 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/碎碎念/" rel="tag">#碎碎念</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/09/24/第一周/" rel="next" title="第一周">
-                <i class="fa fa-chevron-left"></i> 第一周
+              <a href="/2019/03/03/快排-堆排时间复杂度粗略分析/" rel="next" title="快排&堆排时间复杂度粗略分析">
+                <i class="fa fa-chevron-left"></i> 快排&堆排时间复杂度粗略分析
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/10/03/下学期计划/" rel="prev" title="下学期计划">
-                下学期计划 <i class="fa fa-chevron-right"></i>
+              <a href="/2020/02/23/Gson序列化Java8字面量初始化的HashSet有坑/" rel="prev" title="Gson序列化Java8字面量初始化的HashSet有坑">
+                Gson序列化Java8字面量初始化的HashSet有坑 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -405,7 +389,7 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/10/02/第二周/" data-title="第二周" data-url="https://spencerl.github.io/2016/10/02/第二周/">
+      <div class="ds-thread" data-thread-key="2020/02/23/开发杂记/" data-title="开发杂记" data-url="https://spencerl.github.io/2020/02/23/开发杂记/">
       </div>
     
   </div>
